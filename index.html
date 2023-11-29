@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
+  <title>Flexways</title>
+
+
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+ 
+  <link rel="icon" href="assets/img/img/favicon.ico">
+  
+  <meta name="theme-color" content="#ffffff">
+
+
+  <!-- ===============================================-->
+  <!--    Stylesheets-->
+  <!-- ===============================================-->
+  <link href="assets/css/theme.css" rel="stylesheet" />
+  <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="assets/daterangepicker-master/daterangepicker.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<link rel="stylesheet" href="assets/js/jquery-timepicker-1.3.5/jquery.timepicker.min.css">
+
+</head>
+
+
+  <body>
+
+
+    
+    <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+        <script>
+          var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"541152599877","welcomeMessage":"Hello","zIndex":999999,"btnColorScheme":"light"};
+          window.onload = () => {
+            _waEmbed(wa_btnSetting);
+          };
+        </script>
+
+
+
+ 
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img class="d-inline-block" src="assets/img/img/logo-flexways.png" width="100%" alt="logo" /></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto pt-2 pt-lg-0 font-base">
+  <!--        <li class="nav-item px-2"><a class="nav-link fw-medium active" aria-current="page" href="#"><img src="assets/img/img/CO2Neutral.png" width="150"></a></li> -->
+              
+              <li class="nav-item px-2"><a class="nav-link" href="#"> <span class="nav-link-icon text-600 me-1 fas fa-check"></span><span class="nav-link-text">Web Check In</span></a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#iniciar-sesion"><span class="nav-link-icon text-600 me-1 fas fa-user"></span><span class="nav-link-text">Mis Reservas</span></a></li>
+              <li><a class="nav-item px-2 d-lg-none d-block"><a class="nav-link d-lg-none d-block" href="#">About Us</a></li>
+              <li><a class="nav-item px-2 d-lg-none d-block"><a class="nav-link d-lg-none d-block" href="#">Afiliaciones</a></li>
+              <li><a class="nav-item px-2 d-lg-none d-block"><a class="nav-link d-lg-none d-block" href="#">Sustentabilidad</a></li>
+              <li><a class="nav-item px-2 d-lg-none d-block" ><a class="nav-link d-lg-none d-block" href="#">Destinos</a></li>
+            </ul>
+            <form>
+              <a class="btn btn-voyage-outline order-0" data-bs-toggle="modal" data-bs-target="#toCallModal"  href="#toCallModal"><span class="nav-link-icon text-primary me-1 fas fa-phone"></span><span class="text-primary">Llamar</span></a>
+              <button class="dropdown btn btn-glow px-2 text-800  order-1 order-lg-0 d-lg-inline-flex d-sm-none">
+              <a class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="nav-link-icon fas fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li><a class="dropdown-item" href="#">Afiliaciones</a></li>
+                  <li><a class="dropdown-item" href="#">Sustentabilidad</a></li>
+                  <li><a class="dropdown-item" href="#">Destinos</a></li>
+                </ul>
+              
+            </button>
+              <a href="#monedas" class="px-2 text-800 order-1 order-lg-0 apiom_ul_monedas"  data-bs-toggle="modal" data-bs-target="#monedas" type="button">AR$</a>
+              <a href="#idiomas" class="px-2 text-800 order-1 order-lg-0 " type="button" href="#idiomas" id="idiomaSelector"  data-bs-toggle="modal" data-bs-target="#idiomas"><picture>
+                <source type="image/webp" srcset="https://flagcdn.com/20x15/us.webp, https://flagcdn.com/40x30/us.webp 2x, https://flagcdn.com/60x45/us.webp 3x">
+                <source type="image/png" srcset="https://flagcdn.com/20x15/us.png, https://flagcdn.com/40x30/us.png 2x, https://flagcdn.com/60x45/us.png 3x">
+                <img style="margin:0px;padding:0px" src="https://flagcdn.com/20x15/us.png" alt="English">
+            </picture></a>
+              
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <section class="mt-7 py-0">
+        <div class="bg-holder  d-none d-lg-block" style="background-image:url(assets/img/img/home-bg.jpg);">
+        </div>
+       
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 py-5 py-xl-5 py-xxl-5" >
+              <h3 class="display-3  fw-normal">Alquiler de Autos</h3>
+              <h1 class="display-3 text-primary fw-bold">en el Mundo</h1>
+              <div class="pt-2">
+                <nav>
+              
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                      <form class="row g-4 mt-1">
+                        <div class="col-sm-12 col-md-12 col-xl-8">
+                          <div class="input-group-icon">
+                            <label  class="form-label visually-hidden" >Ciudad desde</label>
+                            <input id="apiom_fecha_desde_input" class="apiom_fecha_desde form-control input-box form-voyage-control trn" type="text" placeholder="Ciudad de Recogida" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"></i></span>
+                          </div>
+                         
+                        </div>
+                        <div id="otra" class="col-sm-8 col-md-8 col-xl-8 accordion-collapse collapse otra">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden apiom_ciudad_hasta" >Ciudad hasta</label>
+                            <input  id="apiom_ciudad_hasta" class="form-control input-box form-voyage-control"  type="text" placeholder="Ciudad de Devolución" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"> </i></span>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-xl-5">
+                          <div class="input-group-icon">
+                          
+                            <input class="form-control input-box form-voyage-control" id="apiom_fecha_desde" type="text" name="datefilter" placeholder="Fecha de Retiro" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-xl-3">
+                          <div class="input-group-icon">
+                            <input class="form-control input-box form-voyage-control" id="apiom_hora_desde" type="time" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-clock"></i></span>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-xl-5">
+                          <div class="input-group-icon">
+                            <input class="form-control input-box form-voyage-control" id="apiom_fecha_hasta" type="text" name="datefilter" placeholder="Fecha Devolución"  /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-xl-3">
+                          <div class="input-group-icon">
+                            <input class="form-control input-box form-voyage-control" id="apiom_hora_hasta" type="time" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-clock"></i></span>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 ">
+                          <div class="form-check">
+                              <input class="form-check-input" id="flexCheckDefault2" type="checkbox" data-bs-toggle="collapse" data-bs-target="#otra">
+                              <label class="form-check-label text-dark check-formulario trn" for="flexCheckDefault2">Devolver el vehículo en una oficina distinta</label>
+                          </div>
+                    <!--   </div>
+                        <div class="col-md-12 "> -->
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" data-bs-toggle="collapse" data-bs-target="#codigo" aria-expanded="true" aria-controls="collapse6"> 
+                              <label class="form-check-label text-dark check-formulario trn" for="flexCheckDefault">Tengo un código promocional
+                              </label>
+                            </div>
+                            </div>
+                        <div id="codigo" class="col-sm-6 col-md-6 col-xl-6 accordion-collapse collapse">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputPersonOne">Código</label>
+                            <input type="text" class="form-control  input-box form-voyage-control" id="apiom_codigo_tarifa" placeholder="Código de Descuento"><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-ticket"> </i></span>
+                          </div>
+                        </div>
+                        <div class="col-12 col-xl-8 col-lg-8 d-grid mt-4">
+                          <button class="btn btn-secondary" type="submit">Buscar</button>
+                        </div>
+                      </form>
+                    </div>
+                   
+                  
+                  </div>
+                </nav>
+              </div>
+            </div>
+
+
+            <div class="col-lg-6 py-5 py-xl-5 py-xxl-5 d-sm-none d-lg-block" >
+              <div class="row">
+                <div class="col-lg-12 " >
+                <img class="float-end" src="assets/img/img/co2-home.png">
+              
+              </div>
+              <div class="col-lg-12">
+              
+                <h6 class=" text-white fw-bold text-end">Compensamos la<br> huella de carbono<br> de tu alquiler</h6>
+              </div>
+            
+            </div>    
+
+
+          </div>
+        </div>
+      </section>
+
+
+    
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0 overflow-hidden">
+
+        <div class="container-fluid">
+          <div class="row h-100">
+            <div class="col-lg-7 mx-auto text-center mb-3 mt-6">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Tu mejor experiencia en alquiler de autos</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 px-0"><img class="img-fluid order-md-0 mb-4  fit-cover" src="assets/img/img/mapa2.png" alt="Mapa Donde Estamos">
+              <div class="row">
+              <div class="col-lg-3 col-6 text-center d-lg-block d-none">
+              </div>
+              <div class="col-lg-3 col-6 text-center">
+                   <div class="counter-box colored text-center">
+                      <span class="counter quantity_countries display-3 text-primary">39</span>
+                      <p class="trn" keylang="Paises">Países</p>
+                  </div>
+
+              </div>
+              <div class="col-lg-3 col-6 text-center">
+
+
+                  <div class="counter-box colored text-center">
+                  
+                  
+                      <span class="counter trn  display-3 text-primary" keylang="%%CITIES_AMOUNT%%">303</span>
+                      <p class="trn" keylang="Ciudades">Ciudades</p>
+                  </div>
+
+
+              </div>
+              <div class="col-lg-3 col-6 text-center">
+              </div>
+            </div>
+            </div>
+
+            <div class="col-lg-6 px-0  ">
+              <div class="mx-3 mx-xl-8 my-3">
+                <div class="align-items-center d-block d-flex mb-2 mt-4"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/img/presencia-global.png" width="70px" alt="">
+                  <div class="flex-1 align-items-center pt-2">
+                    <h5 class="fw-bold ">PRESENCIA GLOBAL</h5>
+                    <p class="text-primary">Encontranos en más de 300 ciudades alrededor del mundo.
+                      </p>
+                  </div>
+                </div>
+                <div class="align-items-center d-block d-flex mb-2"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/img/asistencia.png" width="70px" alt="...">
+                  <div class="flex-1 align-items-center pt-2">
+                    <h5 class="fw-bold ">ASISTENCIA 7X24</h5>
+                    <p class="text-primary">Podés comunicarte con nuestro contact center, por teléfono o Whatsapp.</p>
+                  </div>
+                </div>
+                <div class="align-items-center d-block d-flex mb-2"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/img/carbono-neutro.png" width="70px" alt="...">
+                  <div class="flex-1 align-items-center pt-2">
+                    <h5 class="fw-bold ">CARBONO NEUTRO</h5>
+                    <p class="text-primary">Compensamos el 100% de las emisiones de carbono de tu alquiler.</p>
+                  </div>
+                </div>
+                <div class="align-items-center d-block d-flex mb-2"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/img/sin-cargos-ocultos.png" width="70px" alt="...">
+                  <div class="flex-1 align-items-center pt-2">
+                    <h5 class="fw-bold">SIN CARGOS OCULTOS</h5>
+                    <p class="text-primary">La tarifa que mostramos,  es exactamente la que vas a pagar.
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+
+      </section>
+
+      <section class="py-2 overflow-hidden" id="lugares">
+
+        <div class="container bg-offcanvas-gray-right">
+          <div class="row h-100">
+            <div class="col-lg-7 mx-auto text-center mb-3 mt-6">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Explorá tu destino</h5>
+            </div>
+          </div>
+          <div class="row gx-2 mb-2">
+            <div class="col-12 col-md-12 col-lg-4">
+              <div class="bg-primary bg-offcanvas ">
+                <div class="row g-0 justify-content-end">
+                  <div class="col-12">
+                    <div class=" p-md-44 text-light">
+                      <img class="mb-4" src="assets/img/icons/icon-location.svg" width="30px" alt="...">
+                      <h3 class="mb-2 text-light">Presencia<br> Internacional</h3>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/img/mexico.jpg" height="auto" alt="...">
+                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                  <div class="mt-auto px-4 mb-1">
+                    <h3 class="fs-1 fs-md-2 text-white">México</h3>
+                  </div>
+                </div><a class="stretched-link" href="#"></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/img/punta-cana.jpg" height="auto" alt="...">
+                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                  <div class="mt-auto px-4 mb-1">
+                    <h3 class="fs-1 fs-md-2 text-white">Punta Cana</h3>
+                  </div>
+                </div><a class="stretched-link" href="#"></a>
+              </div>
+            </div>
+          </div>
+          <div class="row g-2">
+            <div class="col-sm-6 col-lg-4">
+              <div class="row g-2">
+                <div class="col-12">
+                  <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/img/buenos-aires.jpg" height="400" alt="...">
+                    <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                      <div class="mt-auto px-4 mb-1">
+                        <h3 class="fs-1 fs-md-2 text-white">Buenos Aires</h3>
+                      </div>
+                    </div><a class="stretched-link" href="#"></a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="row g-2">
+                <div class="col-12">
+                  <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/img/orlando.jpg" height="400" alt="...">
+                    <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                      <div class="mt-auto px-4 mb-1">
+                        <h3 class="fs-1 fs-md-2 text-white">Orlando</h3>
+                      </div>
+                    </div><a class="stretched-link" href="#"></a>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="row g-2">
+                <div class="col-12">
+                  <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/img/atenas.jpg" height="400" alt="...">
+                    <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                      <div class="mt-auto px-4 mb-1">
+                        <h3 class="fs-1 fs-md-2 text-white">Atenas</h3>
+                      </div>
+                    </div><a class="stretched-link" href="#"></a>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+           
+      
+          </div>
+        </div>
+      </section>
+
+      <section class="py-0 overflow-hidden">
+
+        <div class="container-fluid">
+          <div class="row h-100">
+            <div class="col-lg-7 mx-auto text-center mb-3 mt-6">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Sustentabilidad</h5>
+           
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 px-0 bg-gray bg-offcanvas-grey ">
+              <div class="mx-3 mx-xl-8 my-3">
+                <div class="align-items-center d-block d-flex mb-2 mt-4"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/img/auto-co2.png" width="70px" alt="">
+                  <div class="flex-1 align-items-center pt-2">
+                    <h5 class="fw-bold ">DEVUELVES TU AUTO</h5>
+                    <p class="text-success">EY eso es todo lo que tienes que hacer.
+                      </p>
+                  </div>
+                </div>
+                <div class="align-items-center d-block d-flex mb-2"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/img/calculadora-co2.png" width="70px" alt="...">
+                  <div class="flex-1 align-items-center pt-2">
+                    <h5 class="fw-bold ">CALCULAMOS LOS GEI GENERADOS</h5>
+                    <p class="text-success">Los GEI (gases de efecto invernadero) se calculan automáticamente, en base estándares internacionales.</p>
+                  </div>
+                </div>
+                <div class="align-items-center d-block d-flex mb-2"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/img/nubeco2.png" width="70px" alt="...">
+                  <div class="flex-1 align-items-center pt-2">
+                    <h5 class="fw-bold ">INVERSIÓN EN MEDIO AMBIENTE</h5>
+                    <p class="text-success">Adquirimos los BONOS DE CARBONO necesarios para compensar la huella generada, convirtiendo tu viaje en un viaje “CARBONO NEUTRO”</p>
+                  </div>
+                </div>
+                <div class="align-items-center d-block d-flex mb-2"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/img/arbolco2.png" width="70px" alt="...">
+                  <div class="flex-1 align-items-center pt-2">
+                    <h5 class="fw-bold">ADQUIRIMOS BONOS DE CARBONO</h5>
+                    <p class="text-success">Los bonos de carbono se destinan a proyectos de reforestación y desarrollo de energías renovables.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 px-0 bg-success">
+              <div class="row">
+                <div class="col-lg-12 text-center d-lg-block d-none">
+                <p class="display-6 text-white p-5">Somos la primera empresa de alquiler de autos del mundo en compensar el 100% de la huella de carbono generada por todos nuestros clientes</p>
+                </div>
+
+                <div class="col-lg-12  text-center pt-3">
+                  <div class="counter-box colored text-center">
+                   <span class="counter trn  display-4 text-white" keylang="%%CITIES_AMOUNT%%">150g de CO2</span>
+                      <p class="trn text-white fs-1" keylang="Ciudades">= 1 km recorrido</p>
+                  </div>
+                </div>
+
+              <div class="col-lg-12  text-center">
+
+               
+                   <div class="counter-box colored text-center">
+                      <span class="counter quantity_countries display-3 text-white fs-1">Alquilando con nosotros, compensas el CO2 generado por tu viaje</span>
+                     
+                  </div>
+
+                  <button href="#" class="btn btn-light mt-3" type="submit">Más Información</button>
+              </div>
+            
+             
+            </div>
+            </div>
+
+          
+          </div>
+        </div>
+       
+
+      </section>
+
+
+      <section class="py-2 overflow-hidden" id="lugares">
+
+        <div class="container bg-offcanvas-gray-right">
+          <div class="row h-100">
+            <div class="col-lg-7 mx-auto text-center mb-3 mt-6">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Preguntas frecuentes</h5>
+            </div>
+          </div>
+          <div class="row gx-2 mb-2">
+           
+			
+              <div class="col-lg-6 col-md-6">
+                  <div id="accordion" role="tablist" aria-multiselectable="true">
+                      
+                      <!-- faq 2 -->
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingOne">
+                             <h5 class="mb-0 p-2 fw-normal">
+                                  <a data-bs-toggle="collapse" data-parent="#accordion" href="#collapse-111" aria-expanded="false" aria-controls="collapseOne" class="d-block text-white trn collapsed"><i class="fas fa-info me-2"></i> <span class="trn">¿QUÉ OPCIONES DE PAGO ESTÁN DISPONIBLES PARA EL ALQUILER DE AUTOS?</span></a>
+                              </h5>
+                          </div>
+
+                          <div id="collapse-111" class=" show collapse" role="tabpanel" aria-labelledby="headingOne" style="">
+                              <div class="card-block  p-3 trn"><spam class="fw-bold trn"> Es necesario tener una tarjeta de credito.</spam> Sin embargo la reserva se puede realizar con cualquier tarjeta de credito o debito y transferencia bancaria.</div>
+                          </div>
+                      </div>
+                      <!-- //  faq 2 -->
+                      <!-- faq 2 -->
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingOne">
+                             <h5 class="mb-0 p-2 fw-normal">
+                                  <a data-bs-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="true" aria-controls="collapseOne" class="d-block text-white trn collapsed trn"><i class="fas fa-info me-2"></i> <span class="trn"> ¿TIENE UNA OPCIÓN DE CONDUCTOR ADICIONAL?</span></a>
+                              </h5>
+                          </div>
+
+                          <div id="collapse-2" class="hide collapse " role="tabpanel" aria-labelledby="headingOne" style="">
+                              <div class="card-block  p-3 trn">Sí, podras agregar un <spam class="fw-bold trn">conductor adicional</spam>. Para obtener mas informacion lo podés ver en nuestro sitio web.</div>
+                          </div>
+                      </div>
+                      <!-- //  faq 2 -->
+                    
+                     
+                   
+                      
+
+                  </div>
+              </div>
+             
+         <div class="col-lg-6 col-md-6">
+                  <div id="accordion2" role="tablist" aria-multiselectable="true">
+                     
+                       <!-- faq 2 -->
+                       <div class="card">
+                          <div class="card-header" role="tab" id="headingOne">
+                              <h5 class="mb-0 p-2 fw-normal">
+                                  <a data-bs-toggle="collapse" data-parent="#accordion2" href="#collapse-22" aria-expanded="false" aria-controls="collapseOne" class="d-block text-white trn collapsed trn collapsed"><i class="fas fa-info me-2"></i> <span class="trn"> ¿CUAL ES LA POLÍTICA DE KILOMETRAJE Y HAY RESTRICCIONES EN CUANTO A LOS DESTINOS PERMITIDOS?</span></a>
+                              </h5>
+                          </div>
+
+                          <div id="collapse-22" class="collapse show" role="tabpanel" aria-labelledby="headingOne" style="">
+                              <div class="card-block  p-3 trn">La politica de Kilometraje dependera de la ciudad. Sin embargo tenemos la opcion de <spam class="fw-bold trn">Kilometraje libre o restringido a 200km</spam></div>
+                          </div>
+                      </div>
+                      <!-- //  faq 2 -->
+                      <!-- faq 2 -->
+                     
+                      <!-- faq 3 -->
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingOne">
+                             <h5 class="mb-0 p-2 fw-normal">
+                                  <a data-bs-toggle="collapse" data-parent="#accordion2" href="#collapse-32" aria-expanded="false" aria-controls="collapseOne" class="d-block text-white trn collapsed trn collapsed"><i class="fas fa-info me-2"></i><span class="trn"> ¿A QUE NUMERO PUEDO COMUNICARME?
+                                  </span></a>
+                              </h5>
+                          </div>
+
+                          <div id="collapse-32" class="collapse" role="tabpanel" aria-labelledby="headingOne" style="">
+                              <div class="card-block  p-3 trn"><spam class="fw-bold trn">Podrás comunicarte gratuitamente al : Whatsapp </spam>. Sino a los teléfonos: Argentina +54 9 11 5259 9877 / Mexico +52 55 4000 3802 / Estados Unidos +1 (321) 821 5141 / España +34 93 393 61 32 Todos los días las 24 hrs</div>
+                          </div>
+                      </div>
+                    
+                      
+
+                  </div>
+              </div>
+      
+    
+            </div>
+            </div>
+            </section>
+
+
+            <section class="py-2 overflow-hidden" id="lugares">
+
+              <div class="container bg-offcanvas-gray-right">
+                <div class="row h-100">
+                  <div class="col-lg-7 mx-auto text-center mb-1 mt-6">
+                    <h5 class="fw-bold fs-3 fs-lg-5 lh-sm ">¡Bienvenido a Flexways alquiler de autos en el mundo!</h5>
+                  
+                  </div>
+                  <p class="text-primary fs-0 text-center">Latinoamérica se denomina al territorio geográfico ubicado en América donde se habla las lenguas derivadas del latín y que, originalmente, proceden de los países europeos que desembarcaron en el nuevo continente. Las lenguas más habladas son el español, el portugués y el francés, pero se denomina Latinoamérica no solo a las dos primeras. Por supuesto, el primero de estos es la lengua que caracteriza al continente ya que la mayoría de países la tienen como lengua oficial y, por supuesto, la que mayor número de habitantes la usa como idioma principal.</p>
+                </div>
+                <div class="row mb-2 fs---1" style="line-height: 18px;">
+                  <div class="col-lg-4 text-justify ">
+                    <p>La región comprende más de 20 millones de kilómetros cuadrados a lo largo de América, desde México hasta Argentina. Por ser una región que se extiende en casi la totalidad de la latitud terrestre, la variedad de climas, ecosistemas, flora y fauna, es impresionante. Cuenta con la mayor diversidad de especies animales, los mayores ríos, los más variados ecosistemas de la tierra. Por ser una región multicultural, en Latinoamérica se puede encontrar poblaciones autóctonas, descendientes de inmigrantes europeos de muchas sociedades: española, italiana, subsaharianos, eslavos, entre otros.</p>
+                    </div>
+                    <div class="col-lg-4 text-justify ">
+                      <p>Elige el alquiler de autos en Argentina con Flexways y podrás acceder a los lugares más diversos del continente: Buenos Aires, la Reina del Plata, una ciudad cosmopolita llena de arte y cultura. Iguazú con las Cataratas del Iguazú, una de las 7 maravillas del mundo moderno. Bariloche, El Calafate, dos destinos ideales para el invierno, pero muy visitados en verano también. El norte argentino con destino tan particulares como Salta o Jujuy.</p>
+                      </div>
+                      <div class="col-lg-4 text-justify ">
+                        <p>Elige el alquiler de autos en Chile con Flexways y podrás acceder a lugares con una diversidad muy marcada a lo largo de su latitud. Visita Santiago de Chile, una ciudad emplazada en la Depresión Intermedia pero que se enaltece con las montañas nevadas de la Cordillera de los Andes. También podrás acceder a Puerto Montt, la puerta del sur chileno. No dejes de visitar Valparaíso y Viña del Mar, entre otras tantas.</p>
+                        </div>
+                        <div class="col-lg-12 text-justify  role="tab" id="texto"">
+                         
+
+                          <div class="col-lg-3 mx-auto text-center mb-3">
+                          <a data-bs-toggle="collapse" data-parent="#accordion3" href="#leer-mas" aria-expanded="false" aria-controls="collapseOne" class="btn btn-voyage-outline d-block  text-primary trn collapsed trn   fst-italic"><span class="trn"> Leer más
+                          </span><i class="fa fa-arrow-right" style="font-size: 0.8em !important;"></i></a></div>
+
+                          <div id="leer-mas" class="collapse" role="tabpanel" aria-labelledby="texto">
+                            <p>Escoge un alquiler de autos en Uruguay con Flexways y pasea por Montevideo, una de las ciudades con mejor nivel de vida de Latinoamérica. Una ciudad muy bien cuidada, con costas de arenas y caminos de rambla que te deslumbrarán. También dirígete a Punta del Este, un lugar de ensueño con sus playas y lugares gastronómicos de alta categoría.</p>
+                          <p>Escoge un alquiler de autos en Bolivia con Flexways y disfruta de la diversidad de suelo en las cuatro estaciones: desde la llanura boliviana hacia las altas montañas de la cordillera, hasta la puerta de la selva amazónica al noroeste.</p>
+
+                          <p>Opta por el alquiler de autos en Colombia y disfruta de una de los destinos más importantes del continente. La amabilidad de su gente le hará sentir en casa todo el tiempo. Visita Bogotá y recorre todo el sector cordillerano de Colombia. También podrás visitar Pereira, Cali y Medellín, todo el eje cafetero. Colombia tiene lugar de ensueño, desde los valles montañosos hasta las costas de Santa Marta, Cartagena y Barranquilla en el Mar Caribe.</p>
+                          <p>Elige un carro en alquiler de autos en Ecuador con Flexways y visita una de las ciudades costeras más lindas del Océano Pacífico: Guayaquil. Pintoresca, luminosa, glamorosa. Su impactante puerto y vida nocturna llaman al turista joven y también a todas las edades con diferentes atracciones. También podrás visitar Quito, una hermosa ciudad entre montañas que te abrumará de vistas divinas y excursiones inolvidables.</p>
+                          <p>Escoge un alquiler de autos en Flexways en Costa Rica y viaja por este hermoso paraíso verde. De costa a costa, cada lugar tiene un vínculo estrecho con toda la naturaleza virgen de la región. Tanto en San José, llegar al Mar Caribe, como en Liberia, para llegar al Océano Pacífico, múltiples lugares te esperan con los brazos abiertos: playas, cascadas, montañas, volcanes; todo lo que puedas soñar.</p>
+                          <p>Elige un alquiler de auto en República Dominicana con Flexways y pasea por las playas más increíbles de América, el mejor clima, y uno de los índices más altos de calidad de vida del continente. Santo Domingo, la zona antigua, la ribera y el Malecón. También podrás visitar una de las playas más famosas del mundo: la famosa Puntacana.</p>
+                          <p>En el centro este de Argentina, se encuentran las maravillosas sierras, un destino imperdible del país. Cada rincón está cubierto por arroyos y cascadas que llevan a los valles encantados donde se encuentran los pueblos y ciudades. Durante todas las estaciones del año Córdoba es un destino que merece visitarse. Con múltiples actividades, desde culturales hasta de aventuras. El camino sinuoso y de ensueño de las altas cumbres, es una de las experiencias más maravillosas de vivir, recorriéndolo con tu auto rentado en Flexways® alquiler de autos . El Valle de Punilla, Traslasierra, el Valle de Calamuchita y Los Fortines, son sólo algunos de los puntos recomendados. Pero hay un sinfín de sitios para aventurarse y conocer en esta región encantadora.</p>
+                          <p class="fs-0">Opta por un alquiler de autos en México con Flexways y disfruta del país más grande de Latinoamérica con la economía más poderosa y el turismo más sobresaliente.</p>
+                          <p>Tanto México, como Cancún están disponibles para poder recorrer ambos destinos soñados y renombrados a nivel planetario. México, una ciudad elevada entre montañas, peñones y colinas pero habitada en un valle. Cancún, la playa que busca ser el paraíso y que tiene capacidad hotelera para un nivel de demanda mundial.</p>
+                          <p>Elige un alquiler de autos en Perú con Flexways y visita Lima. Una de las ciudades más pintorescas del Océano Pacífico. Su costa, su ribera rupturista la convierte en una de las costas más extrañas e inolvidables. Pasea por las calles y avenidas costeras y aprovecha la gastronomía peruana, una de las más peculiares del mundo. También podrás visitar Machu Pichu, el lugar elegido para conocer nuestro pasado a los pies de la cultura de los Incas.</p>
+                          <p>Escoge un alquiler de autos en Flexways en Paraguay y llega a Asunción. La capital del país está ubicada en un lugar estratégico por ser de fácil acceso para el resto de las grandes capitales: Buenos Aires, Brasilia, Montevideo, Santiago, etcétera. La ciudad de las siete colinas al borde del Río Paraguay te brindará un muy buen precio para que puedas aprovechar y conocer al máximo un destino que se encuentro dentro de las ciudades de mayor avance en el último lustro según estudios internacionales.</p>
+                          <p class="text-primary fs-0 text-center">Todos estos lugares y muchos más los podrás visitar a través de nuestro servicio. Elige entre diferentes categorías de vehículos según tu necesidad con la mejor calidad de servicio.</p>
+
+                          </div>
+
+                        
+                           
+                          </div>
+
+                  </div>
+
+                  </div>
+
+                  </section>
+
+                  <section class="py-3 overflow-hidden mb-3" id="lugares">
+
+                    <div class="container">
+                      <div class="row h-100">
+                        <div class="col-lg-7  text-center mb-1 mt-6 my-auto align-middle" >
+                          <h5 class="fw-bold fs-3 fs-lg-5 lh-sm btn btn-primary my-auto">¿Tiene una rentadora? ¡Afíliese!</h5>
+                          <p class="mt-1 fs-1 text-primary">Una integración, múltiples beneficios.</p>
+                        
+                        </div>
+                        <div class="col-lg-5  text-center mb-1 mt-6">
+                          <p class="mb-1 fs-1">Tenemos todo pensado para que ganemos juntos.</p>
+                         
+                          <h5 class=" btn btn-info">Más Información</h5>
+                        </div>
+
+                        </div>
+                        </div>
+                        </section>
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+        <section class="py-0 overflow-hidden">
+
+          <div class="container">
+            <div class="row">
+              <div class=" col-sm-4 col-lg-6 bg-gray bg-offcanvas-grey">
+                <div class="py-lg-7"><img class="d-inline-block" src="assets/img/img/logo-flexways.png" alt="logo" />
+                  <ul class="list-unstyled mt-4">
+                    <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">Sobre Nosotros</a></li>
+                    <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">Afiliaciones</a></li>
+                    <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">Sostenibilidad</a></li>
+                    <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">Destinos</a></li>
+                    <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">FAQs</a></li>
+                    <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">Terminos & Condiciones</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="  col-lg-6 bg-primary bg-offcanvas-right">
+                <div class="p-3 py-lg-7 p-md-7">
+                  <p class="text-light"><i class="fas fa-phone-alt me-3"></i><span class="text-light">+54 9 11 5259-9877</span></p>
+                  <p class="text-light"><i class="fas fa-envelope me-3"></i><span class="text-light">contact@flexways.com</span></p>
+               
+                  <div class="mt-3"><a href="https://www.facebook.com/FlexwaysCom" target="_blank"> <img class="me-3" src="assets/img/icons/facebook.svg" alt="..." /></a><a href="https://www.instagram.com/_flexways_en/" target="_blank"> <img class="me-3" src="assets/img/icons/instagram.svg" alt="..." /></a></div>
+                  <img class="mt-3" src="assets/img/img/secure.png"/>
+  
+                  <p class="mt-3 text-light text-md-start"> © Flexways, all rights reserved.</p>
+                  <p class="mt-3 text-light text-md-start"> Powered by <img class="d-inline-block" width="120" src="assets/img/img/logo-white.png"/></p>
+                </div>
+               
+              </div> 
+              </div>
+            </div>
+          </div>
+          <!-- end of .container-->
+  
+        </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <div id="monedas" class="modal fade " aria-modal="true" role="dialog" >
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="font-weight-600 trn" keylang="Seleccionar Idioma">Seleccione una Moneda</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-lg-start">
+      <div class=" m-0">
+        <a href="#" class="dropdown-item convert"  data-to-currency="ARS" id="ARS">$ (ARS)</a>
+        <a href="#" class="dropdown-item convert"  data-to-currency="USD" id="USD">US$ (USD)</a>
+        <a href="#" class="dropdown-item convert"  data-to-currency="EUR" id="EUR">€ (EUR)</a>
+       
+    </div>
+    </div>
+    </div>
+            </div></div>
+            </div>
+
+
+
+      <div id="idiomas" class="modal fade " aria-modal="true" role="dialog" >
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="font-weight-600 trn" keylang="Seleccionar Idioma">Select Language</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-lg-start">
+                        <div class="col-lg-3 col-6">
+                <ul class="list-unstyled">
+                    <li class="mb-4"><a class="lang_selector" id="idiomaES" href="#" data-value="ES">
+                            <picture>
+                                <source type="image/webp" srcset="https://flagcdn.com/40x30/es.webp,
+                                https://flagcdn.com/40x30/es.webp 2x,
+                                https://flagcdn.com/60x45/es.webp 3x">
+                                <source type="image/png" srcset="https://flagcdn.com/40x30/es.png,
+                                https://flagcdn.com/40x30/es.png 2x,
+                                https://flagcdn.com/60x45/es.png 3x">
+                                <img src="https://flagcdn.com/40x30/es.png" width="30" height="20" alt="Español">
+                            </picture>
+                            <span>Español</span>&nbsp;<i class="fa fa-check language-check-icon" style="display: none;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div><div class="col-lg-3 col-6">
+                <ul class="list-unstyled">
+                    <li class="mb-4"><a class="lang_selector idioma-activo" id="idiomaEN" href="#" data-value="EN">
+                            <picture>
+                                <source type="image/webp" srcset="https://flagcdn.com/40x30/us.webp,
+                                https://flagcdn.com/40x30/us.webp 2x,
+                                https://flagcdn.com/60x45/us.webp 3x">
+                                <source type="image/png" srcset="https://flagcdn.com/40x30/us.png,
+                                https://flagcdn.com/40x30/us.png 2x,
+                                https://flagcdn.com/60x45/us.png 3x">
+                                <img src="https://flagcdn.com/40x30/us.png" width="30" height="20" alt="English">
+                            </picture>
+                            <span>English</span>&nbsp;<i class="fa fa-check language-check-icon" style=""></i>
+                        </a>
+                    </li>
+                </ul>
+            </div><div class="col-lg-3 col-6">
+                <ul class="list-unstyled">
+                    <li class="mb-4"><a class="lang_selector" id="idiomaPT" href="#" data-value="PT">
+                            <picture>
+                                <source type="image/webp" srcset="https://flagcdn.com/40x30/br.webp,
+                                https://flagcdn.com/40x30/br.webp 2x,
+                                https://flagcdn.com/60x45/br.webp 3x">
+                                <source type="image/png" srcset="https://flagcdn.com/40x30/br.png,
+                                https://flagcdn.com/40x30/br.png 2x,
+                                https://flagcdn.com/60x45/br.png 3x">
+                                <img src="https://flagcdn.com/40x30/br.png" width="30" height="20" alt="Português">
+                            </picture>
+                            <span>Português</span>&nbsp;<i class="fa fa-check language-check-icon" style="display: none;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div><div class="col-lg-3 col-6">
+                <ul class="list-unstyled">
+                    <li class="mb-4"><a class="lang_selector" id="idiomaFR" href="#" data-value="FR">
+                            <picture>
+                                <source type="image/webp" srcset="https://flagcdn.com/40x30/fr.webp,
+                                https://flagcdn.com/40x30/fr.webp 2x,
+                                https://flagcdn.com/60x45/fr.webp 3x">
+                                <source type="image/png" srcset="https://flagcdn.com/40x30/fr.png,
+                                https://flagcdn.com/40x30/fr.png 2x,
+                                https://flagcdn.com/60x45/fr.png 3x">
+                                <img src="https://flagcdn.com/40x30/fr.png" width="30" height="20" alt="Français">
+                            </picture>
+                            <span>Français</span>&nbsp;<i class="fa fa-check language-check-icon" style="display: none;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div><div class="col-lg-3 col-6">
+                <ul class="list-unstyled">
+                    <li class="mb-4"><a class="lang_selector" id="idiomaEL" href="#" data-value="EL">
+                            <picture>
+                                <source type="image/webp" srcset="https://flagcdn.com/40x30/gr.webp,
+                                https://flagcdn.com/40x30/gr.webp 2x,
+                                https://flagcdn.com/60x45/gr.webp 3x">
+                                <source type="image/png" srcset="https://flagcdn.com/40x30/gr.png,
+                                https://flagcdn.com/40x30/gr.png 2x,
+                                https://flagcdn.com/60x45/gr.png 3x">
+                                <img src="https://flagcdn.com/40x30/gr.png" width="30" height="20" alt="Ελληνικά">
+                            </picture>
+                            <span>Ελληνικά</span>&nbsp;<i class="fa fa-check language-check-icon" style="display: none;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div><div class="col-lg-3 col-6">
+                <ul class="list-unstyled">
+                    <li class="mb-4"><a class="lang_selector" id="idiomaDE" href="#" data-value="DE">
+                            <picture>
+                                <source type="image/webp" srcset="https://flagcdn.com/40x30/de.webp,
+                                https://flagcdn.com/40x30/de.webp 2x,
+                                https://flagcdn.com/60x45/de.webp 3x">
+                                <source type="image/png" srcset="https://flagcdn.com/40x30/de.png,
+                                https://flagcdn.com/40x30/de.png 2x,
+                                https://flagcdn.com/60x45/de.png 3x">
+                                <img src="https://flagcdn.com/40x30/de.png" width="30" height="20" alt="Deutsch">
+                            </picture>
+                            <span>Deutsch</span>&nbsp;<i class="fa fa-check language-check-icon" style="display: none;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div><div class="col-lg-3 col-6">
+                <ul class="list-unstyled">
+                    <li class="mb-4"><a class="lang_selector" id="idiomaIT" href="#" data-value="IT">
+                            <picture>
+                                <source type="image/webp" srcset="https://flagcdn.com/40x30/it.webp,
+                                https://flagcdn.com/40x30/it.webp 2x,
+                                https://flagcdn.com/60x45/it.webp 3x">
+                                <source type="image/png" srcset="https://flagcdn.com/40x30/it.png,
+                                https://flagcdn.com/40x30/it.png 2x,
+                                https://flagcdn.com/60x45/it.png 3x">
+                                <img src="https://flagcdn.com/40x30/it.png" width="30" height="20" alt="Italiano">
+                            </picture>
+                            <span>Italiano</span>&nbsp;<i class="fa fa-check language-check-icon" style="display: none;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div><div class="col-lg-3 col-6">
+                <ul class="list-unstyled">
+                    <li class="mb-4"><a class="lang_selector" id="idiomaIS" href="#" data-value="IS">
+                            <picture>
+                                <source type="image/webp" srcset="https://flagcdn.com/40x30/is.webp,
+                                https://flagcdn.com/40x30/is.webp 2x,
+                                https://flagcdn.com/60x45/is.webp 3x">
+                                <source type="image/png" srcset="https://flagcdn.com/40x30/is.png,
+                                https://flagcdn.com/40x30/is.png 2x,
+                                https://flagcdn.com/60x45/is.png 3x">
+                                <img src="https://flagcdn.com/40x30/is.png" width="30" height="20" alt="Ísland">
+                            </picture>
+                            <span>Ísland</span>&nbsp;<i class="fa fa-check language-check-icon" style="display: none;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div><div class="col-lg-3 col-6">
+                <ul class="list-unstyled">
+                    <li class="mb-4"><a class="lang_selector" id="idiomaHR" href="#" data-value="HR">
+                            <picture>
+                                <source type="image/webp" srcset="https://flagcdn.com/40x30/hr.webp,
+                                https://flagcdn.com/40x30/hr.webp 2x,
+                                https://flagcdn.com/60x45/hr.webp 3x">
+                                <source type="image/png" srcset="https://flagcdn.com/40x30/hr.png,
+                                https://flagcdn.com/40x30/hr.png 2x,
+                                https://flagcdn.com/60x45/hr.png 3x">
+                                <img src="https://flagcdn.com/40x30/hr.png" width="30" height="20" alt="Hrvatska">
+                            </picture>
+                            <span>Hrvatska</span>&nbsp;<i class="fa fa-check language-check-icon" style="display: none;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div><div class="col-lg-3 col-6">
+                <ul class="list-unstyled">
+                    <li class="mb-4"><a class="lang_selector" id="idiomaPL" href="#" data-value="PL">
+                            <picture>
+                                <source type="image/webp" srcset="https://flagcdn.com/40x30/pl.webp,
+                                https://flagcdn.com/40x30/pl.webp 2x,
+                                https://flagcdn.com/60x45/pl.webp 3x">
+                                <source type="image/png" srcset="https://flagcdn.com/40x30/pl.png,
+                                https://flagcdn.com/40x30/pl.png 2x,
+                                https://flagcdn.com/60x45/pl.png 3x">
+                                <img src="https://flagcdn.com/40x30/pl.png" width="30" height="20" alt="Polski">
+                            </picture>
+                            <span>Polski</span>&nbsp;<i class="fa fa-check language-check-icon" style="display: none;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div><div class="col-lg-3 col-6">
+                <ul class="list-unstyled">
+                    <li class="mb-4"><a class="lang_selector" id="idiomaRO" href="#" data-value="RO">
+                            <picture>
+                                <source type="image/webp" srcset="https://flagcdn.com/40x30/ro.webp,
+                                https://flagcdn.com/40x30/ro.webp 2x,
+                                https://flagcdn.com/60x45/ro.webp 3x">
+                                <source type="image/png" srcset="https://flagcdn.com/40x30/ro.png,
+                                https://flagcdn.com/40x30/ro.png 2x,
+                                https://flagcdn.com/60x45/ro.png 3x">
+                                <img src="https://flagcdn.com/40x30/ro.png" width="30" height="20" alt="Română">
+                            </picture>
+                            <span>Română</span>&nbsp;<i class="fa fa-check language-check-icon" style="display: none;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+	 
+<div id="iniciar-sesion" class="modal fade">
+  <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        
+          
+    
+    <div class="modal-header">
+                                 
+                                  <h5 class="text-uppercase italic text-medium font-weight-600 trn">Mis Reservas </h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="row justify-content-md-center">
+
+                                  <div class="col-md-12">
+                                      <div class="padding-30px background-white border-1 border-grey-1">
+                                          <form>
+                                              <div class="form-floating mb-3">
+                                                  <input type="text" class="form-control register" id="myRentName" name="myRentName" placeholder="Nombre">
+                                                  <label for="r_nombre" class="trn" keylang="Nombre">Nombre</label>
+                                              </div>
+                                              <div class="form-floating mb-3">
+                                                  <input type="text" class="form-control register" id="myRentSurname" name="myRentSurname" placeholder="Apellido">
+                                                  <label for="r_apellido" class="trn" keylang="Apellido">Apellido</label>
+                                              </div>
+                                              <div class="form-floating mb-3">
+                                                  <input type="text" class="form-control register" id="myRentCode" name="myRentCode" placeholder="Código reserva">
+                                                  <label for="r_codigo" class="trn" keylang="Código reserva">Código reserva</label>
+                                              </div>
+              
+                                              <div class="form-group  pt-1">
+                                                  <a href="#" id="apiom_submit_login" class="mt-3 btn btn-success btn-block trn w-100" keylang="Encontrar mi Reserva">Encontrar mi Reserva</a>
+                                              </div>
+                                          </form>
+                                      </div>
+                                  </div>
+                              </div>
+          </div>
+      </div>
+  </div>
+ </div>
+
+
+ 
+ 
+ <div class="modal fade" id="toCallModal" >
+  <div class="modal-dialog" >
+    <div class="modal-content">
+      <div class="modal-header align-items-center">
+		<h5 class="font-weight-600 trn" keylang="Confirmación de llamada">Confirmación de llamada</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+        <span class="trn" keylang="Para continuar, por favor, indíquenos si desea iniciar una llamada por Internet.">Para continuar, por favor, indíquenos si desea iniciar una llamada por Internet.</span>  <span class="trn" keylang="Tendrá que conceder permisos para el uso del micrófono.">Tendrá que conceder permisos para el uso del micrófono.</span>
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success trn" id="confirmCall" keylang="Llamar">Llamar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+  </body>
+
+</html>

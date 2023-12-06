@@ -35,6 +35,7 @@
   --bs-gradient: linear-gradient(180deg, rgba(255, 254, 254, 0.15), rgba(255, 254, 254, 0));
 }
 
+
 .tc-primary{
   color: var(--bs-primary);
 }
